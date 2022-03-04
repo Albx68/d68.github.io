@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/d68.github.io./static/css/main.0402d72b.css",
+    "main.js": "/d68.github.io./static/js/main.90dc80fc.js",
+    "static/media/letter.png": "/d68.github.io./static/media/letter.01a6df0b3eb8be9c1ed9.png",
+    "static/media/pattern.png": "/d68.github.io./static/media/pattern.c8d8d7cbc64401477b30.png",
+    "static/media/2.png": "/d68.github.io./static/media/2.e672dc7834322b813e64.png",
+    "static/media/1.png": "/d68.github.io./static/media/1.e38980a4e65130e07286.png",
+    "static/media/3.png": "/d68.github.io./static/media/3.be971956fd22ee329ba4.png",
+    "static/media/9.png": "/d68.github.io./static/media/9.d40a84ce52434eab4f39.png",
+    "static/media/card.png": "/d68.github.io./static/media/card.80c860b39946e8895a27.png",
+    "static/media/7.png": "/d68.github.io./static/media/7.6a906fad93ab4fcb8db8.png",
+    "static/media/4.png": "/d68.github.io./static/media/4.78df0b98679e18567f47.png",
+    "static/media/8.png": "/d68.github.io./static/media/8.719d7034d71a2b97b5e3.png",
+    "static/media/6.png": "/d68.github.io./static/media/6.c8981f833ebb0cd90b9b.png",
+    "static/media/scissor.svg": "/d68.github.io./static/media/scissor.64569064041ca8d54d53b22f5692c574.svg",
+    "index.html": "/d68.github.io./index.html",
+    "main.0402d72b.css.map": "/d68.github.io./static/css/main.0402d72b.css.map",
+    "main.90dc80fc.js.map": "/d68.github.io./static/js/main.90dc80fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0402d72b.css",
+    "static/js/main.90dc80fc.js"
+  ]
+}
