@@ -1,0 +1,33 @@
+@keyframes puzzleAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.heading {
+  animation-name: puzzleAnim;
+  animation-duration: 1s;
+  color: rgb(255, 40, 105);
+}
+.puzzle {
+  animation-name: puzzleAnim;
+  animation-duration: 1s;
+  // animation-delay: 200ms;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+
+  @media (max-width: 510px) {
+    grid-template-columns: repeat(3, 80px);
+  }
+  .piece {
+    height: 150px;
+
+    @media (max-width: 510px) {
+      height: 80px;
+    }
+  }
+}

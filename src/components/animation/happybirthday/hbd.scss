@@ -1,0 +1,22 @@
+@keyframes hbdanim {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hbdAnim {
+  animation-name: hbdanim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}

@@ -1,0 +1,260 @@
+@keyframes buttonAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes buttonAnimOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes scrolldownAnim {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-items: center;
+  justify-content: center;
+  .scrolldown {
+    font-size: 7rem;
+    color: rgb(255, 40, 105);
+    text-align: center;
+    animation-name: scrolldownAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7em;
+    @media (max-width: 810px) {
+      flex-direction: column-reverse;
+      gap: 0em;
+    }
+  }
+  .amazing {
+    .arrow-right {
+      color: rgb(255, 40, 105);
+      font-size: 4rem;
+      animation-name: buttonAnim;
+      animation-duration: 1s;
+      transition: 250ms all ease-out;
+      &:hover {
+        // transform: translateX(20px);
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    .arrow-left {
+      color: rgb(255, 40, 105);
+      font-size: 4rem;
+      animation-name: buttonAnim;
+      animation-duration: 1s;
+      transition: 250ms all ease-out;
+      &:hover {
+        // transform: translateX(-20px);
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    .number {
+      font-size: 5rem;
+      background-color: rgb(255, 40, 105);
+      color: white;
+      color: rgb(27, 27, 27);
+      border-radius: 0.1em;
+      padding: 0 0.4em 0 0.4em;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .btn-heading {
+      animation-name: buttonAnim;
+      animation-duration: 1s;
+      transition: 250ms all ease-out;
+      font-size: 3rem;
+      cursor: pointer;
+      &.red {
+        color: rgb(255, 40, 105);
+      }
+    }
+  }
+}
+.scrolldown {
+  cursor: pointer;
+  font-size: 4rem !important;
+}
+@keyframes scissorAnim {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+.draggable-container {
+  @media (max-width: 510px) {
+    height: 200px;
+    width: 200px;
+  }
+}
+.gift-open {
+  transform: scale(0.7);
+}
+.scissor {
+  animation-name: scissorAnim;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  color: red;
+  font-size: 5rem;
+  font-weight: bold;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  filter: blur(8px);
+  top: 55%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-color: rgb(255, 249, 196);
+  cursor: pointer;
+  transform: scale(0.5);
+  opacity: 0;
+  @media (max-width: 510px) {
+    height: 20px;
+    width: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+}
+.icon-container {
+  position: absolute;
+  display: flex;
+  gap: 1em;
+  bottom: 5%;
+  right: 5%;
+  @media (max-width: 510px) {
+  }
+}
+.gift-message {
+  animation-name: buttonAnimOut;
+  animation-duration: 3s;
+  transition: 250ms all ease-in-out;
+  color: rgb(255, 40, 105);
+  z-index: 20;
+  opacity: 0;
+  @media (max-width: 510px) {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@keyframes letterClosedAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+    // transform: rotate(-5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    // transform: rotate(0deg);
+  }
+}
+.letter-closed {
+  animation-name: letterClosedAnim;
+  animation-duration: 1s;
+  cursor: pointer;
+  @media (max-width: 710px) {
+    height: 200px;
+    // margin-left: -200px;
+  }
+  @media (max-width: 410px) {
+    height: 160px;
+  }
+}
+.letter-open {
+  animation-name: buttonAnim;
+  animation-duration: 1s;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -300px;
+  @media (max-width: 710px) {
+    height: 250px;
+    margin-left: -200px;
+  }
+  @media (max-width: 410px) {
+    height: 200px;
+    margin-left: -160px;
+  }
+}
+@keyframes letterAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    // transform: rotate(-5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    // transform: rotate(0deg);
+  }
+}
+.letter {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -300px;
+  animation-name: letterAnim;
+
+  animation-duration: 1.3s;
+  @media (max-width: 710px) {
+    height: 350px;
+    margin-left: -200px;
+    margin-top: 80px;
+  }
+  @media (max-width: 410px) {
+    height: 250px;
+    margin-left: -120px;
+    margin-top: 80px;
+  }
+}

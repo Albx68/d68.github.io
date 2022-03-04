@@ -1,0 +1,118 @@
+@keyframes displayScaleUp {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.display-card-container {
+  animation-name: displayScaleUp;
+  animation-duration: 1s;
+  max-height: 300px;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -250px;
+  overflow: hidden;
+  z-index: 20;
+  background-color: #fff5f9;
+  border-radius: 0.6em;
+  @media (max-width: 510px) {
+    max-height: 250px;
+    max-width: 350px;
+    margin-top: -125px;
+
+    margin-left: -175px;
+  }
+  .display-image-card {
+    max-height: 525px;
+    @media (max-width: 510px) {
+      max-height: 300px;
+    }
+  }
+  .display-image-input {
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    top: 50%;
+    margin-top: -45px;
+    left: 50%;
+    margin-left: -170px;
+    border-radius: 0.6em;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(255, 40, 105);
+    border: 6px solid rgb(255, 40, 105);
+    padding: 0.6em;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: rgb(255, 40, 105);
+    }
+    @media (max-width: 510px) {
+      height: 30px;
+      width: 250px;
+      margin-left: -145px;
+    }
+  }
+  .display-image-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    top: 80%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -75px;
+    border-radius: 0.2em;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(255, 40, 105);
+    border: none;
+    cursor: pointer;
+    padding: 0.6em;
+    :active {
+      transform: scale(1.1);
+    }
+    @media (max-width: 510px) {
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  }
+}
+.hint {
+  position: absolute;
+  margin-left: -15px;
+  color: rgb(255, 255, 255);
+  z-index: 20;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  color: rgb(255, 40, 105);
+  width: 400px;
+  .hint-text {
+    animation-name: buttonAnim;
+    animation-duration: 1s;
+    position: absolute;
+    margin-left: -110px;
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  .error {
+    animation-name: buttonAnim;
+    animation-duration: 1s;
+    position: absolute;
+    margin-left: -105px;
+    margin-top: 60px;
+    font-size: 1rem;
+  }
+}
